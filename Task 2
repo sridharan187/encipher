@@ -1,0 +1,84 @@
+⭐ Sridharan — Mini Portfolio Website
+
+This is my mini portfolio project created using HTML and CSS.
+It contains formatting tags, headings, math expressions, links, social icons, and a simple homepage section.
+
+📌 Project Features
+✔️ Text Formatting
+
+Includes 10 formatting tags:
+b, strong, i, em, u, mark, small, del, ins, sub, sup.
+
+✔️ Article Section
+
+A small article written using headings h1 to h6.
+
+✔️ Highlighted Paragraph
+
+Important words highlighted using bold, strong, mark.
+
+✔️ Math & Chemical Expressions
+
+Examples using sub and sup:
+
+H₂SO₄
+
+x² + y²
+
+CO₂
+
+E = mc²
+
+a₁ + b₁ = c₁
+
+✔️ Chemical Equation
+
+Displayed using the <hr> separator:
+
+Zn(s) + H₂SO₄(aq)
+-------------------------
+ZnSO₄(aq) + H₂(g)
+
+✔️ Mini Homepage
+
+Contains 5 external links:
+
+About
+
+Projects
+
+Resume
+
+Contact
+
+Blog
+
+✔️ Social Media Links
+
+Instagram, LinkedIn, YouTube (open in new tab).
+
+✔️ Clickable Title
+
+The main heading and paragraph redirect to an external page.
+
+🧑‍💻 Technologies Used
+
+HTML5
+
+CSS3 (inline + internal)
+
+No JavaScript (as per requirement)
+
+🎯 Project Purpose
+
+This project is part of my daily HTML practice to improve:
+
+web structure understanding
+
+formatting tags
+
+link handling
+
+page design
+
+basic portfolio creation
