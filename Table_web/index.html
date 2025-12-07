@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <table border="1" cellpadding="10" cellspacing="5"> 
+
+        <colgroup>
+            <col span="1" style="background-color:lightblue">
+            <col span="1" style="background-color:lightgreen">
+            <col span="1" style="background-color:lightyellow">
+            
+        </colgroup>
+
+
+        <tr>
+            <th>
+                S.No
+            </th>
+
+            <th>
+               Student name
+            </th>
+
+            <th>
+                Marks
+            </th>
+        </tr>
+        <tr>
+            <td rowspan="2"  style="background-color: rgb(233, 138, 236);" >01</td>
+            <td>Sridharan</td>
+            <td>50</td>
+
+        </tr>
+
+        <tr>
+           
+            <td>thomas</td>
+            <td>60</td>
+
+        </tr>
+        <tr>
+            <td>02</td>
+            <td>kumar</td>
+            <td>
+                <table border="1" >
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                </tr>
+                <tr>
+                    
+                        <col span="1" style="background-color: lightgray;">
+                        <col span="2" style="background-color: lightpink;">
+                
+                    <td rowspan="2"  style="background-color: chocolate;" >Kumar</td>
+                    <td>23</td>
+                    <td>New York</td>
+                </tr>
+                <tr>
+                  
+                    <td>30</td>
+                    <td>Los Angeles</td>
+                </tr>
+            
+            </table>
+        </td>
+        </tr>
+
+        <tr >
+            <td colspan="3" >
+            <p>Nested Table </p>   
+            <table border="1" >
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                </tr>
+                <tr>
+                    <td>Alice</td>
+                    <td>23</td>
+                    <td>New York</td>
+                </tr>
+                <tr>
+                    <td>Bob</td>
+                    <td>30</td>
+                    <td>Los Angeles</td>
+                </tr>
+            </table>
+        </tr>
+
+    </table>
+
+    
+        <h2>
+            Available Courses
+        </h2>
+        <table border="1" cellpadding="10" cellspacing="5">
+            <tr>
+                <th  >
+                   <h5> Course Name</h5>
+                </th>
+                <th>
+                    Image
+                </th>
+                <th>
+                    Price
+                </th>
+
+            </tr>
+            <tr>
+                <td>HTML Basics</td>
+                <td><img src="aicoding.jpg" alt="HTML Course" width="100%" height="100%" ></td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>CSS Fundamentals</td>
+                <td><img src="darkcode.jpg" alt="CSS Course" width="100%" height="100%"  ></td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>JavaScript Essentials</td>
+                <td><img src="hello world.jpg" alt="JavaScript Course" width="100%" height="100%"  ></td>
+                <td>1500</td>
+            </tr>
+
+        </table>
+        <h2>
+            Order Summary
+        </h2>
+
+
+        <table border="1" cellpadding="10" cellspacing="5">
+
+            
+
+            <tr>
+                <thead style="background-color: blue;" >
+                <th >employee Name</th>
+                <th >Quantity</th>
+                <th >Salary</th>
+                <th>weekly</th>
+                <th >Total</th>
+                </thead>        
+              
+               
+            </tr>
+            <tr>
+                <tbody rowspan="1" style="background-color: antiquewhite;" >
+                        <td>Notebook</td>
+                <td>2</td>
+                <td>5000</td>
+                <td>Monday</td>
+                <td>10000</td>
+                </tbody>
+
+                
+            </tr>
+            <tr>
+                <tbody rowspan="1" style="background-color: rgb(111, 52, 52);" >
+                <td>Pen</td>
+                <td>5</td>
+                <td> 10000</td>
+                <td>
+                    tuesday
+                </td>
+                <td>5000</td>
+                </tbody>
+            </tr>
+            <tr>
+                <tbody rowspan="1" style="background-color:antiquewhite;" >
+                    <td>Eraser</td>
+                <td>3</td>
+                <td>2500</td>
+                <td>wednesday</td>
+                <td>1050</td>
+
+                </tbody>
+
+
+                
+            </tr>
+            <tr>
+                                <tbody rowspan="1" style="background-color: rgb(111, 52, 52);" >
+
+                <td>Marker</td>
+                <td>4</td>
+                <td>20000</td>
+                <td>thursday</td>
+                <td>8000</td>
+                </tbody>
+            </tr>
+
+            <tr>
+                                <tbody rowspan="1" style="background-color:antiquewhite;" >
+
+                <td>Ruler</td>
+                <td>1</td>
+                <td>10000</td>
+                <td>friday</td>
+                <td>1000</td>
+                </tbody>
+            </tr>
+
+            <tr>
+                                <tbody rowspan="1" style="background-color: rgb(111, 52, 52)" >
+
+                <td><mark>calculator</mark></td>
+                <td><mark>100000</mark></td>
+                <td><mark>$10.00</mark></td>
+                <td><mark>saturday</mark></td>
+                <td><mark>10000</mark></td>
+
+               
+                </tbody>
+            </tr>
+
+            <tr>
+                                <tbody rowspan="1" style="background-color:antiquewhite;" >
+
+                <td>Sharpener</td>
+                <td>2</td>
+                <td>7500</td>
+                <td>Sunday</td>
+                <td>1050</td>
+                </tbody>
+            </tr>
+
+
+
+
+
+            <tr>
+                <td colspan="4" style="text-align: right; font-weight: bold;">Final Total</td>
+                <td>16050</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td colspan="5" style="text-align: center; font-weight: bold;">Thank you for your purchase!</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h2>
+            Countries and their Flags
+        </h2>
+
+        <table border="1" cellpadding="10" cellspacing="5"> 
+            <tr>
+                <th>Country</th>
+                <th>Flag</th>
+            </tr>
+            <tr>
+                <td>USA</td>
+                <td><img src="flag-square-500.png" alt="USA Flag" width="50" height="30"></td>
+            </tr>
+            <tr>
+                <td>Canada</td>
+                <td><img src="flag-square-500 (1).png" alt="Canada Flag" width="50" height="30"></td>
+            </tr>
+            <tr>
+                <td>India</td>
+                <td><img src="indian-flag-tiranga-jhanda-picture-for-whatsapp-hd-pics-11659876876xjxjjsqyu7.jpg" alt="India" width="50" height="30"></td>
+            </tr>
+        </table>
+
+        <h2>
+            comparison table for two mobile phones
+        </h2>
+        <table border="1" cellpadding="10" cellspacing="5">
+            <tr>
+                <th>Feature</th>
+                <th>i Phone </th>
+                <th>android</th>
+            </tr>
+            <tr>
+                <td>Display</td>
+                <td><b>6.1-inch</b> OLED</td>
+                <td><i>6.5-inch</i> AMOLED</td>
+            </tr>
+            <tr>
+                <td>Processor</td>
+                <td><b>A14 Bionic</b></td>
+                <td><i>Snapdragon 888</i></td>
+            </tr>
+            <tr>
+                <td>Camera</td>
+                <td><b>12MP Dual</b></td>
+                <td><i>108MP Quad</i></td>
+            </tr>
+
+                <tr>
+                <td>Battery</td>
+                <td><b>2815mAh</b></td>
+                <td><i>50000</i></td>
+
+                </tr>
+                <tr>
+                <td>Price</td>
+                <td><b>$799</b></td>    
+                <td><i>10000</i></td>
+                </tr>
+
+        </table>
+
+
+
+        <!-- Create a form and use all input types (text, password, email, number, date, file, checkbox, radio, select, textarea, submit, reset). --> 
+        <h2>
+            Sample Form
+        </h2>
+        
+        <fieldset style="width: 25%; height: auto;" >
+            <legend>Registration Form</legend>
+
+            <form action="submit.html " style=" border: solid transparent ; padding: 10px; border-radius: 15px; width: 300px; background-color: lightgray; " >
+            <label   for="name"  >
+               <h3> Name:<input autofocus  pattern="[a-zA-Z]{5}" title="enter the name" type="text" name="name" autocomplete="off" required> </h3>
+            </label>
+            <br>
+            <label for="password">
+                password: <input autofocus  pattern="[0-9]"  type="number" name="password"   required>
+            </label>
+            <br>
+            <label for="email">
+                Email: <input type="email" name="email" required>
+            </label>
+            <br>
+            <label for="age">
+                Age: <input type="number" name="age" min="1" max="120" required>
+            </label>
+            <br>
+
+            <label for="dob">
+                Date of Birth: <input type="date" name="dob" required>
+            </label>
+            <br>
+            <label for="file">
+                Upload File: <input type="file" name="file" required>
+            </label>
+
+            <br>
+            <label for="subscribe">
+                <input type="checkbox" name="subscribe" >
+                Subscribe to newsletter
+            </label>
+            <br>
+            <label for="gender_male">
+                <input type="radio" name="gender" value="male" required>
+                Male 
+            </label>
+            <label for="gender_female">
+                <input type="radio" name="gender" value="female" required>  
+                female
+            </label>    
+            <br>
+            <label for="country " aria-disabled="false" >
+                Country:
+                <select name="country" required>
+                    <option  disabled value="">Select Country</option>
+                    <option  selected value="usa">USA</option>
+                    <option  selected value="canada">Canada</option>
+                    <option value="india">India</option>
+                </select>
+            </label>
+            <br>
+
+
+            <label for="comments"  >
+                Comments:
+                <textarea name="comments" rows="5" cols="35" required></textarea>
+            </label>
+           
+
+
+
+           
+
+            
+
+            
+                <input type="submit" value="Submit">
+
+                <input type="reset" value="Reset">
+
+
+        </form>
+        </fieldset>
+        
+
+        
+
+
+
+
+
+
+
+    
+</body>
+</html>
+
+
+
+
+<!-- HTML Table Questions
+
+Create a simple table with 3 rows and 3 columns showing student names and marks.
+
+Create a table with a header row containing Name, Age, City.
+
+Create a table using the border, cellpadding, and cellspacing attributes.
+
+Create a table where one cell uses colspan to merge two columns.
+
+Create a table where one cell uses rowspan to merge two rows.
+
+Build a product list table with columns: Product Image, Name, Price.
+
+Create a table with 5 rows and apply background color only to the header.
+
+Create a timetable for weekly classes (Monday to Saturday).
+
+Build a table showing employee details and highlight the highest salary using the <mark> tag.
+
+Create a table with alternating row colors (even and odd rows).
+
+Make a table showing countries and their flags by inserting images inside cells.
+
+Create a nested table where one cell contains another table.
+
+Create an order summary table (Item Name, Quantity, Price, Total) and manually calculate the final total in the last row.
+
+Create a comparison table for two mobile phones using formatting tags inside cells (e.g., <b>, <i>).
+
+Create a form and use all input types (text, password, email, number, date, file, checkbox, radio, select, textarea, submit, reset). -->
