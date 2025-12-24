@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("soccer-game-concept.jpg") no-repeat ;
+    background-size: cover;
+    background-position: center;    
+
+}
+.wrapper{
+    width: 350px;
+    padding: 40px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+}
+.wrapper h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.wrapper .input-grp{
+    margin-bottom: 30px;
+
+}
+.wrapper .input-grp input{
+    width: 100%;
+    padding: 10px 15px;
+    background: rgba(255,255,255,0.2);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+}
+.wrapper .input-grp input::placeholder{
+    padding: 0px 1px;
+    color: #fff;
+}
+.wrapper .btn{
+    width: 100%;
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+    background: #540269;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.wrapper .btn:hover{
+    background: #350c4f;
+    transition: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+
+}
+p{
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+
+.icon{
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 10px;
+    color: #fff;
+} 

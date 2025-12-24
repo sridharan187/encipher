@@ -1,27 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.com/libraries/font-awesome">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form action="about.html"  >
-    <label for="name" >Name:</label>
-    <input id="name"  placeholder="Enter the name"   maxlength="5" minlength="3"  autofocus required type="text"><br><br>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+          
 
-    <label for="email" >Email:</label>
-    <input id="email" type="email"><br><br>
+        }
+        .name{
+            width: 300px;
+            height: 30px;
+            border-radius: 5px;
+            border: 2px solid rgb(151, 150, 150);
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: 16px;
+            background-color: transparent;
 
-    <label for="password" >Password:</label>
-    <input  id="password" type="password"><br><br>
+        }
+        span{
+            margin-right: 10px;
+            font-size: 20px;
+            color: rgb(151, 150, 150);
 
-    <label for="Gender" >Gender:</label><br>
-    <input type="radio" name="g"> Male
-    <input type="radio" name="g"> Female<br><br>
+        }
+        .submit{
+            width: 100px;
+            height: 35px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(55, 10, 60);
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 15px;
+            margin-left: 150px;
 
-    <label>Skills:</label><br>
-    <input type="checkbox"> HTML
-    <input type="checkbox"> CSS<br><br>
+            margin-bottom: 200px;
 
-    <button type="submit">Register</button>
-</form>
+        }
+        .submit:hover{
+            background-color: rgb(96, 4, 112);
+            transition: all;
+            transition-timing-function: linear;
+            transition-duration: 0.3s;
+            box-shadow: 0 0 10px rgb(96, 4, 112);
+            
+        }
+    </style>
+<div style="background-image: linear-gradient(to right,  rgba(255,0,0,0), rgb(55, 10, 60)); margin-left: -10px; margin-right: -20px; max-width: 1780px; ">
 
+    <div  style=" margin: -18px;">
+        
+    
+        <div class="position" style=" border-radius: 15px; box-shadow: 0 0 5px ;padding: 20px; border: 2px solid transparent;  margin: 10px 120px; display: flex;justify-content: space-between;">
+             <div  >
+                <img height="20" width="50" src="logo-white.png" alt="">
+            </div>
+            <nav style="display: flex; gap: 20px;" >
+                <a  href="index.html">Home</a>
+                <a href="product.html">Products</a>
+                <a  href="#about">About</a>
+                <a  href="contact.html">Contact</a>
+                <a href="Account.html">Account</a>
+                <div><a href="#view"> <i class="bi bi-cart4"> </i></a> </div>
+            </nav>
+           
+        </div>
+
+    </div>
+    <div style="margin-top: -80px ;">
+        <img style="width: 100%; height: 800px; object-fit: cover;" src="soccer-game-concept.jpg" alt="">
+        
+    </div>
+    <div style=" display: flex; justify-content: center; align-items: center; ">
+    <div style="  border: 2px solid transparent;margin: 150px;">
+       
+        <h1 style="letter-spacing: 8px;" >Contact US</h1>
+        <p style=" font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+             Drop A MESSAGE
+                <i class="bi bi-envelope-paper"></i>
+           
+        </p>
+
+        <form action="index.html">
+            <label for="">
+                <span>
+<i class="bi bi-person-bounding-box"></i>
+              </span>
+                <input  class="name" placeholder="Full Name*" type="text" name="" id="">
+            </label>
+            <br>
+            <label for="">
+                <span>
+                    <i class="bi bi-envelope-at-fill"></i>
+                </span>
+                <input class="name" placeholder="Email*" type="email" name="" id="">
+            </label>
+            <br>
+            <label for="">
+                <span>
+                    <i class="bi bi-telephone-forward-fill"></i>
+                </span>
+                <input class="name" placeholder="phone*" type="tel" name="" id="">
+            </label>
+            <br>
+            <label for="">
+                <span>
+                   <i class="bi bi-subtract"></i>
+                </span>
+                <input class="name" placeholder="Subject*" type="text" name="" id="">
+            </label>
+            <br>
+            
+            <label for="">
+                <span  >
+                    <i class="bi bi-chat-right-text-fill"></i>
+                </span> 
+                <textarea  style="margin: 0px;" class="name" placeholder="Message*" name="" id=""></textarea>
+            </label>
+            <br>
+            <label for="">
+                <input class="submit" type="submit" name="" id="">
+            </label>
+        </form>
+    
+    
+    
+    
+    </div>
+
+    <div style="margin-bottom: 100px;">
+        <img  src="Lionel_Messi_Joan_Gamper_Trophy-removebg-preview.png" alt="">
+        
+    </div>
+</div>
+
+</div>
+<footer style="margin-bottom: -10px;margin-left: -10px; margin-right: -10px;" >
+    <div style="    background-image: linear-gradient(to bottom, rgb(96, 4, 112), rgb(56, 3, 66));
+ color: white; padding: 50px; display: flex; gap: 100px; justify-content: center;" >
+
+        <div>
+            <h3>Download Our App</h3>
+            <p>Download App for Android and ios mobile phone.</p>
+            <div style="display: flex; gap: 10px; margin-top: 10px;" >
+                <img height="40px" width="120px" src="play-store.png" alt="">
+                <img height="40px" width="120px" src="app-store.png" alt="">
+
+            </div>
+
+        </div>
+
+        <div >
+           <img style="margin-left: 100px;" width="80px" src="logo-white.png" alt="">
+            <p style="display: flex;justify-content: center; width: 400px;">Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+
+        </div>
+
+        <div>
+            <h3>Useful Links</h3>
+            <p>Coupons</p>
+            <p>Blog Post</p>
+            <p>Return Policy</p>
+            <p>Join Affiliate</p>
+
+        </div>
+
+        <div>
+            <h3>Follow Us</h3>
+            <p>Facebook</p>
+            <p>Twitter</p>
+            <p>Instagram</p>
+            <p>YouTube</p>
+
+        </div>  
+          
+    </div>
+  
+    <div style="background-color: rgb(30, 4, 30); color: white; text-align: center; padding: 10px;" >
+        <p>Copyright 2024 - Enchiper Ecommerce Web</p>  
+    </div>
+
+
+</footer>
 </body>
+</html>

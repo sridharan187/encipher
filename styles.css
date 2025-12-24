@@ -1,12 +1,118 @@
-.heading,footer{
-    margin: 5px;
-    background-color: blue;
-    padding: 5px;
-    color: aliceblue;
-    text-align: center;
+
+a{
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    color: rgb(200, 142, 201);
+
 }
-#name{
-    font-size: 26px;
-    color: rgb(73, 78, 76);
-    margin: 10px -2px ;
+a:hover{
+    text-decoration: underline;
+    color: rgb(210, 139, 190);
+    font-size: large;
+    transform: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    
+}
+.img{
+    border: 2px solid transparent;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    box-shadow: 0 0 5px rgb(81, 81, 81);
+
+    
+    
+}
+.img:hover{
+    border: 2px solid   rgb(162, 61, 147);
+    border-radius: 10px;
+    transform: scale(1.05);
+    transition: all;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+    
+}
+.position{
+    position: sticky;
+    top: 0;
+    background-image: linear-gradient(to bottom, rgb(100, 22, 114), rgb(93, 16, 92));
+    
+}
+.Explore{
+    background-color: rgb(139, 8, 139);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+}
+.Explore,#Explore:hover{
+    box-shadow: 0 0 10px rgb(106, 16, 122);
+    transform: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scale(1.05);
+
+}
+
+.img1{
+    border: 2px solid transparent;
+    padding: 30px;
+    box-shadow: 0 0 5px rgb(81, 81, 81);
+
+}
+
+.img1:hover{
+    transform: scale(1.05);
+    transition: all;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+.img2{
+    border: 2px solid transparent;
+    padding: 30px;
+    box-shadow: 0 0 5px rgb(81, 81, 81);
+}
+.img2:hover{
+    transform: scale(1.05);
+    transition: all;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+.img3{
+    filter:grayscale(100%)
+}
+.img3:hover{
+    filter: grayscale(0%);
+    transform: scale(1.05);
+    transition: all;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+
+.no{
+    background-color: transparent;
+    box-shadow: none;
+}
+.no:hover{
+   background-color: rgb(139, 8, 139);
+   transition: all;
+   transition-duration: 0.3s;
+    transition-timing-function: linear;
+    transform: scale(0.70);
+
+}
+
+select:hover:focus{
+    color: rgb(70, 9, 70)
+}
+.bi-star-fill{
+    color: gold;
+}
+.bi-star-half{
+    color: gold;
 }
