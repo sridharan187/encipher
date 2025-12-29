@@ -1,0 +1,28 @@
+select:focus{
+    color: aquamarine;
+
+}
+select{
+    background-color: rgb(180, 180, 180);
+    color: black;
+}
+
+
+
+/* select:hover{
+    background-color: rgb(14, 110, 78);
+    color: brown;
+} */
+
+option{
+    background-color: rgb(199, 199, 199);
+    color: black;
+}
+option:hover{
+    background-color: rgb(100, 100, 100);
+    color: white;
+}
+option:focus{
+    background-color: rgb(223, 218, 218);
+    color: yellow;
+}
