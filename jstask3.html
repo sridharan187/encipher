@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+</head>
+<body>
+    <script>
+        // <!--  task 1 Username Formatter -->
+
+        // let Username=prompt("Enter your Username:")
+        // let name=Username.toLowerCase().replace(" ","");
+        // alert(name);
+
+        // task 2 Email Validation (Basic)
+
+        // let email = prompt("enter your email")
+        // if (email.includes("@gmail.com")){
+        //     alert("valid")
+        // }else{
+        //     alert("not vaalid")        
+        // }
+ 
+        // let str = "sridharan";
+        // console.log(str.charCodeAt(2));
+        
+         
+        // console.log(("sri").concat("dharan"));
+    //     let arr =[10,20,30,40];
+
+    //     const filter = arr.filter((sri,i,k) =>
+    // {
+    //     console.log(sri,i,k)
+    // } )
+
+        // task 3
+            // let word =  prompt("Enter your word: ")
+            // let count = 0
+            // for (i=0; i<word.length; i++){
+            //     if (word[i] != " "){
+            //         count +=1
+            //     }
+            // }
+            // alert(count)
+
+
+// task4
+// let para = prompt("Enter your paragraph: ")
+// let para1 = para.split(" ")
+// alert(para1.length)
+
+
+// task5
+// let word = prompt("Enter the word: ")
+// alert("First char: " +  word[0] + "\n"+ "Last char: " + word[word.length-1])
+
+
+// task6
+// let sentence = prompt("Enter the sentence: ")
+// let word1 = prompt("Enter oldword: ")
+// let word2 = prompt("Enter Newword: ")
+// let a = sentence.replace(word1,word2)
+// alert("Updated sentence: " + a)
+
+
+// task7
+// let str = prompt("Enter something here: ")
+// if(str.length<=5 || str.length>=20){
+//     alert("Error!!!")
+// }else[
+//     alert("Accepted!!!")
+// ]
+
+
+// task8
+// let word = prompt("Enter the word: ")
+// let c = 0
+// for (i=0; i<word.length; i++){
+//     if (word[i].toUpperCase()==word[i]){
+//         c++
+//     }
+// }
+// alert("count: " + c)
+
+
+// Task9
+// let str = prompt("Enter a String")
+// let res = ""
+// for(let i=0; i<str.length; i++){
+//     let ch=str[i]
+//      if( ch>='a' && ch<='z'|| ch>='A' && ch<='Z' || ch>="0" && ch<="9"|| ch==" "){
+//         res+=ch
+//      }
+// }
+// alert("Final string : "+res)
+
+
+// Task10
+// let sentence = prompt("Enter a sentences :")
+// let start = prompt("Enter starting word: ")
+// let end = prompt("Enter ending word: ")
+// if (sentence.startsWith(start) && sentence.endsWith(end)){
+//   alert("True")
+// } 
+// else{
+//   alert("False")
+// }
+
+// let name = "sridharan";
+// let str = name.lenght();
+
+// console.log(str);
+
+
+
+// task 11
+// let user =prompt("Enter your sentence");
+// let split = user.split(" ")
+// let add = "";
+// for(i=0;i<split.length;i++){
+//     if(split[i].length>add.length){
+//         add=split[i]
+//     }
+// }
+// console.log(add);  //eg: my name is sridharan // sridharan
+
+
+// task12
+
+// let user =prompt("Enter your sentence");
+// let a = user.toUpperCase();
+// console.log(a)
+
+// task13
+
+    // const mobile = prompt("Enter number");
+    // let mask = "******" + mobile.slice(-4);
+    // alert(mask);
+
+// task14
+ 
+    //    const str=prompt("Enter string");
+    //     let repeat="";
+    //     for(let i=0;i<str.length;i++){
+    //         for(let j=i+1;j<str.length;j++){
+    //             if(str[i]===str[j]&&!repeat.includes(str[i])){
+    //                 repeat+=str[i]+" ";
+    //             }
+    //         }
+    //     }
+    //     alert(repeat);  
+
+    // task15
+
+    // const str=prompt("Enter your any string");
+    //     let vcount=0;
+    //     let ccount=0;
+    //     for(let i=0;i<str.length;i++){
+    //         if("aeiouAEIOU".includes(str[i])){
+    //             vcount++;
+    //         }else{
+    //             ccount++;
+    //         }
+    //     }
+    //     alert(vcount+","+ccount);
+
+    // task16
+
+        // const sen=prompt("Enter string");
+        // let duplicate=[...new Set(sen.split(" "))];
+        // alert(duplicate.join(" "));
+    
+    // task 17
+
+        // const s1=prompt("Enter s1")
+        // const s2=prompt("Enter s2")
+        // if(s1===s2){
+        //     alert("anagram");
+        // }else{
+        //     alert("not anagram");
+        // }
+        
+    // task 18
+
+        // const a=prompt("Enter a").trim();
+        // const b=prompt("Enter b").trim();
+        // if(a===b){
+        //     alert("Equal");
+        // }else{
+        //     alert("Not equal");
+        // }
+
+    // task 19
+
+        // const str = prompt("Enter string");
+        // let digit = str.replace(/[0-9]/g,"");
+        // alert(digit);
+
+    // task20
+
+        // const pass=prompt("Enter password");
+        // let hasUpper=false;
+        // let hasNumber=false;
+        // for(let i=0;i<pass.length;i++){
+        //     let ch=pass[i];
+        //     if(ch>="A"&&ch<="Z") hasUpper=true;
+        //     if(ch>="0"&&ch<="9") hasNumber=true;
+        // }
+        // if(pass.length>=8&&hasUpper&&hasNumber){
+        //     alert(" Password is valid");
+        // }else{
+        //     alert("Not a Password");
+        // }
+        
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>
