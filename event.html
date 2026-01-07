@@ -88,6 +88,57 @@ qdawfdc
      <!-- <button id="btn">Touch Me</button>
 <p id="op"></p> -->
 
+    <!-- <button id="btn1">Save</button>
+    <button id="btn2">Delete</button> -->
+    
+    <!-- <div id="p">
+        I am Sridharan
+        <button id="c">Touch Me...</button>
+    </div> -->
+
+     <!-- <div id="p">
+        I am Sridharan
+        <button id="c">Touch Me...</button>
+    </div> -->
+
+    <!-- <button id="blue">
+        blue
+    </button> -->
+
+    <!-- <button id="btn">
+        start
+    </button>
+    <button id="btn1">
+        stop
+    </button> -->
+    <!-- <button id="btn">
+        cancel
+    </button> -->
+    <!-- <button id="btn">
+        start
+    </button>
+    <p id="count">
+        count
+    </p> -->
+    <!-- <button id="start">
+        Start
+    </button>
+    <button id="stop">
+        Stop
+    </button> -->
+<!-- <ul id="list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul> -->
+    <!-- <p id="size">
+
+    </p> -->
+    <div id="text">
+        this is me....
+    </div>
+
+
     <script>
 
 
@@ -276,7 +327,242 @@ qdawfdc
 //         "Triggered By Element: " + event.target.tagName;
 // });
 
+        // task--24
+
+        // document.addEventListener("click",(e)=>{
+        //     if(e.target.tagName === "BUTTON"){
+        //         console.log("Clicked:",e.target.id)
+        //     }
+
+        // })
+
+        // task--25
+
+        // const p = document.getElementById("p")
+        // const c = document.getElementById("c")
+
+        // p.addEventListener("click",(e)=>{
+        //     console.log("head" +e.target.tagName)
+        // })
+        // c.addEventListener("click",()=>{
+        //     console.log("low")
+        // })
+
+        // task--26 -- 27
+
+        // const p = document.getElementById("p")
+        // const c = document.getElementById("c")
+
+        // p.addEventListener("click",(e)=>{
+        //     alert("head" +e.target.tagName)
+        // })
+        // c.addEventListener("click",(e)=>{
+        //     e.stopPropagation();
+        //     alert("low")
+        // })
+
+        // settimeout
+
+        // task--1
+        // const welcome = setTimeout(()=>{
+        //     alert("All are Welcome")
+        // },3000)
+
+        // task--2
+        // const color = document.getElementById("blue")
+
+        // color = addEventListener("click",(e)=>{
+        //     setTimeout(()=>{
+        //     document.body.style.backgroundColor = (e.target.id)
+
+
+        // },1000)
+        // })
+
+        // task--3
+        // const welcome = setInterval(()=>{
+        //    let time = new Date();
+        //    alert(time.toLocaleTimeString());
+        // },5000)
+
+        // task--4
+        // const welcome = setInterval((e)=>{
+        //    let count = 0;
+        //     count++
+            
+        //   console.log(count);
+        // },1000)
+
+        // task--5
+
+        // const t = document.getElementById("btn")
+        // const s = document.getElementById("btn1")
+        // let timer;
+
+        // t.addEventListener("click",()=>{
+        //     timer = setTimeout(()=>{
+        //         alert("10")
+        //     },10000)
+        // })
+        // s.addEventListener("click",()=>{
+        //     clearTimeout(timer)
+        //     alert("cancel")
+        // })
+
+        // task--6
+        // const t = document.getElementById("btn")
         
+
+        //  let timer = setTimeout(()=>{
+        //         alert("5s")
+        //     },10000)
+       
+        // t.addEventListener("click",()=>{
+        //     clearTimeout(timer)
+        //     alert("cancel")
+        // })
+        
+        // task--7
+        // const btn = document.getElementById("btn")
+        // const count1 = document.getElementById("count")
+        // let count = 1;
+        // btn.addEventListener("click",()=>{
+        //     const timer = setInterval(() => {
+        //     count1.innerHTML = "count:" + count
+            
+        //     count++;
+
+        // if (count > 10) {
+        //     clearInterval(timer);
+        //     alert("stop");
+        //     console.log(count-1)
+        //     }
+        // }, 1000);
+        // })
+       
+        // task--8
+    //    const start = document.getElementById("start");
+    //    const stop = document.getElementById("stop");
+
+    //    let count = 1;
+    //    let timer = null; 
+
+    //     start.addEventListener("click", () => {
+            
+    //         if (timer !== null) return;
+
+    //         timer = setInterval(() => {
+    //             start.innerHTML = count;
+    //             console.log(count)
+    //             count++;
+    //         }, 1000);
+    //     });
+
+    //     stop.addEventListener("click", () => {
+    //         clearInterval(timer);
+    //         timer = null;
+    //         count = 1;
+    //         start.innerHTML = "start";
+        // });
+
+        // task--9
+        // const ul = document.getElementById("list");
+
+        // ul.addEventListener("click", (e) => {
+        //     if (e.target.tagName === "LI") {
+        //         e.target.style.backgroundColor = "lightgreen";
+        //     }
+        // });
+                
+        // task--10
+        // const size = document.getElementById("size")
+
+        // window.addEventListener("resize",()=>{
+        //     if(window.innerWidth < 600){
+        //         alert("mapla mobile view da...")
+        //         size.textContent = "Mobile view"
+        //     }
+        //     else{
+        //         alert("mapla ethu desktop da")
+        //         size.textContent = "Not Mobile view"
+        //     }
+        // })
+
+        // task--11
+        //  const size = document.getElementById("size")
+
+        // window.addEventListener("resize",()=>{
+        //     console.log(innerHeight,innerWidth);
+            
+        // })
+
+        // task--12
+        // const topBtn = document.getElementById("topBtn");
+
+        // window.addEventListener("scroll", () => {
+        //     if (window.scrollY > 200) {
+        //         topBtn.style.display = "block";
+        //     } else {
+        //         topBtn.style.display = "none";
+        //     }
+        // });
+
+       
+        // topBtn.addEventListener("click", () => {
+        //     window.scrollTo({
+        //         top: 0,
+        //         behavior: "smooth"
+        //     });
+        // });
+
+        // task--13
+
+        // const text = document.getElementById("text")
+
+        // document.addEventListener("DOMContentLoaded",()=>{
+        //     text.innerHTML = "Again this is me..,,"
+        // })
+
+        // task--14
+        // window.addEventListener("load", () => {
+        // alert("loaded");
+        // });
+
+
+
+
+
+        
+
+
+
+         
+        
+
+
+
+        
+
+
+        
+        
+
+        
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
 
 
 
