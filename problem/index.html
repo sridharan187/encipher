@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // palindrome
+        // let check =  "Madam I'm Adam"
+        // let checked = check.toLowerCase().replace(/[^a-z]/g,"")
+        // let empty = "";
+        // for(i=checked.length-1;i>=0;i--){
+        //    empty += checked[i]
+        // }
+        // if(checked===empty){
+        //     console.log("true");
+            
+        // }
+        // else{
+        //     console.log("false")
+        // }
+
+        //sec largest
+
+        // const arr = [10,5,20,20,8]
+        // let large = arr[0];
+        // for(i=0;i<arr.length;i++){
+        //     if(arr[i]>large){
+        //         large = arr[i]
+        //     }
+
+        // }
+        // console.log("F_Largest: " +large);
+        // let seclarge = -Infinity;
+        // for(i=0;i<arr.length;i++){
+        //     if(arr[i]<large && arr[i]>seclarge ){
+        //         seclarge = arr[i]
+        //     }
+        // }
+        // console.log("S_Largest: " +seclarge)
+        //  let thirdlarge = -Infinity;
+        // for(i=0;i<arr.length;i++){
+        //     if(arr[i]<large && arr[i]<seclarge && arr[i]>thirdlarge ){
+        //         thirdlarge = arr[i]
+        //     }
+        // }
+        // console.log("T_Largest: " +thirdlarge)
+
+        // vowels
+        // let str =  "JavaScript Programming"
+        // let str1 = str.toLowerCase()
+        // let count = 0;
+        // for(i=0;i<str1.length;i++){
+        //    if(str1[i]==="a"  ){
+        //     count++
+        //    }
+        //    else if(str1[i]==="e"){
+        //     count++
+        //    }else if(str1[i]==="i"){
+        //     count++
+        //    }else if(str1[i]==="o"){
+        //     count++
+        //    }else if(str1[i]==="u"){
+        //     count++
+        //    }
+
+        // }
+        // console.log(count);
+
+        // all digits
+        // let no = [4,5,6]
+        // let digits = 0;
+        // for(i=0;i<no.length;i++){
+        //     digits += no[i]
+        // }
+        // console.log(digits);
+        
+        // duplicate
+        // let arr = [1, 2, 3, 2, 4, 1];
+        // let dup = [];
+        // for (let i = 0; i < arr.length; i++) {
+        //   for (let j = i + 1; j < arr.length; j++) {
+        //       if (arr[i] !== arr[j] && !dup.includes(arr[i])) {
+        //         dup+=(arr[i]);
+        //       }
+        //   }
+        // }
+        // console.log("Duplicate", dup);
+
+                
+        // count sentence
+        // let sentence =  " JavaScript is powerful ";
+        // let word = sentence.trim().split(" ");
+        // console.log(word.length)
+        // let count = 0;
+        // for(i=0;i<word.length;i++){
+        //     if(word[i] !== ""){
+        //         count++
+        //     }
+        // }
+        // console.log(count);
+
+        // missing value
+        // let no = [1,2,3,5];
+        // let no1 = no.length+1
+        // let formuala = (no1 * (no1+1)) / 2
+        // console.log("formula",formuala);
+        // let sum = 0;
+        // for(i=0;i<no.length;i++){
+        //     sum+=no[i]
+
+        // }
+        // console.log("sum",sum)
+        // let missing = formuala - sum
+        // console.log("missing:",missing)
+
+        // reverse
+        // let input = "Hello World"
+        // let output = "";
+        // for(i=input.length-1;i>=0;i--){
+        //     output += input[i]   
+        // }
+        //  console.log(output);
+
+        // repeated letter
+    
+        // let str = "javascripts";
+        // let result = "";
+        //     for (i = 0; i < str.length; i++) {
+        //         for (j = i + 1; j < str.length; j++) {
+        //             if (str[i] === str[j]) {
+        //             result += str[i];
+        //             break;   
+        //             }
+        //         }
+        //     }
+        // console.log(result);
+
+        // rotate
+
+        // let arr = [1,2,3,4,5];
+        // let k =2;
+        // let n = arr.length;
+        // k=k%n
+        // let index = 0;
+        // let result = [];
+        // for(i=n-k;i<n;i++){
+        //     result[index] = arr[i]
+        //     index++
+        // }
+        // for(j=0;j<n-k;j++){
+        //        result[index] = arr[j]
+        //         index++
+        //     }
+        // console.log(result);
+
+         // balanced
+            // let brackets = "{[()]}";
+            // let stack = [];
+            // let isBalanced = true;
+            // for (let i = 0; i < brackets.length; i++) {
+            //     let ch = brackets[i];
+            //     if (ch === "(" || ch === "{" || ch === "[") {
+            //         stack.push(ch);
+            //     } else {
+            //         let last = stack.pop();
+            //         if (
+            //             (ch === ")" && last !== "(") ||
+            //             (ch === "}" && last !== "{") ||
+            //             (ch === "]" && last !== "[")
+            //         ) {
+            //             isBalanced = false;
+            //             break;
+            //         }
+            //     }
+            // }
+// console.log(isBalanced && stack.length === 0);
+
+
+            // largest word
+            // let sentence = "JavaScript makes web development powerful";
+            // let words = sentence.split(" ");
+            
+            // let long = words[0];
+
+            // for(i=0;i<words.length;i++){
+            //     if(words[i].length > long.length){
+            //         long = words[i]
+            //     }
+            // }
+            // console.log(long);
+            
+
+
+
+
+
+
+    </script>
+</body>
+</html>
