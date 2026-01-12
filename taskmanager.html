@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Task Manager....</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+}
+
+.main {
+  background: lightcyan;
+  width: 50%;
+  margin: 100px auto;
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+h2 {
+  color: #0d68a1;
+}
+
+input {
+  width: 60%;
+  height: 35px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.add-btn {
+  background: #0f9af1;
+  color: white;
+  border: none;
+  height: 35px;
+  cursor: pointer;
+}
+
+.remove-btn {
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+</style>
+</head>
+
+<body>
+
+<div class="main">
+  <h2>Task Manager !!</h2>
+
+  <input type="text" id="Input" placeholder="What needs to be done?">
+  <button class="add-btn" id="btn">Add Task</button>
+
+  <table width="100%">
+    <tbody id="task"></tbody>
+  </table>
+</div>
+
+<script>
+const i = document.getElementById("Input");
+const btn = document.getElementById("btn");
+const taskList = document.getElementById("task");
+
+
+btn.addEventListener("click", () => {
+  const task = i.value.trim();
+
+  if (task === "") {
+    alert("Please enter a task");
+    return;
+  }
+
+    const row = document.createElement("tr");
+
+            row.innerHTML = `
+                <td><i class="fa-solid fa-check"></i></td>
+                <td class="task-text">${task}</td>
+                <td><button class="remove-btn">Remove</button></td>
+            `;
+
+    taskList.appendChild(row);
+    i.value = "";
+    });
+
+
+    taskList.addEventListener("click", (e) => {
+            if (e.target.classList.contains("remove-btn")) {
+                const row = e.target.closest("tr");
+                const taskText = row.querySelector(".task-text");
+
+                const confirmRemove = confirm("if you mark this task...");
+
+
+                if (confirmRemove) {
+                taskText.classList.toggle("completed");
+                }
+            }
+            });
+
+
+
+
+
+</script>
+
+</body>
+</html>
