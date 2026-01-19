@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: rgb(18, 71, 18);
+            /* flex-direction: column; */
+            color: white;
+        }
+        input{
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            
+        }
+        /* ul{
+            margin: 0px;
+        } */
+    </style>
+
+
+      <div>
+     <h1>
+        This is eg of user input stored in list of data
+    </h1>
+
+   
+        <input type="text" placeholder="Enter your name!!"><br><br>
+        <button>Submit</button>
+    
+        <ul>
+
+        </ul>
+   </div>
+ 
+
+        <script>
+            const btn = document.querySelector("button")
+            const input = document.querySelector("input")
+            const list = document.querySelector("ul")
+
+            btn.addEventListener("click",()=>{
+                const inputvalue = input.value
+
+                list.insertAdjacentHTML( "beforeend" , `<li>${inputvalue}</li>`)  
+            })
+
+
+        </script>
+    
+</body>
+</html>

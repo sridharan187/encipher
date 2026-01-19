@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form...</title>
+</head>
+<body>
+    <style>
+        * {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e6e6ff;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+
+form {
+    
+    background: white;
+    padding: 20px;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+
+button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+
+
+
+table {
+    width: 100%;
+    margin-top: 25px;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+
+      
+
+    </style>
+
+
+
+<form id="form">
+    <label>First Name:
+        <input type="text" id="firstname" required>
+    </label><br><br>
+
+    <label>Last Name:
+        <input type="text" id="lastname" required>
+    </label><br><br>
+
+    <label>Age:
+        <input type="number" id="age" required>
+    </label><br><br>
+
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="Male" required> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <br><br>
+
+    <label>Course:</label>
+    <select id="course">
+        <option value="HTML">HTML5</option>
+        <option value="CSS">CSS</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="React">React</option>
+    </select><br><br>
+
+    <label>Date:
+        <input type="date" id="date" required>
+    </label><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+<br>
+
+<table border="3">
+    <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Course</th>
+            <th>Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="tablebody">
+      
+    </tbody>
+</table>
+
+    <script>
+    const form = document.getElementById("form");
+    const tablebody = document.getElementById("tablebody");
+
+    
+
+
+    function addItem(student, index) {
+    const newrow = `<tr>
+        <td>${student.firstname}</td>
+        <td>${student.lastname}</td>
+        <td>${student.age}</td>
+        <td>${student.gender}</td>
+        <td>${student.course}</td>
+        <td>${student.date}</td>
+        <td>
+            <button onclick="editItem(${index})">Edit</button>
+            <button onclick="deleteItem(${index})">Delete</button>
+        </td>
+    </tr>`;
+    tablebody.insertAdjacentHTML("beforeend", newrow);
+}
+
+
+
+
+
+   form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const student = {
+        firstname: e.target[0].value,
+        lastname: e.target[1].value,
+        age: e.target[2].value,
+        gender: document.querySelector('input[name="gender"]:checked').value,
+        course: e.target[5].value,
+        date: e.target[6].value
+    };
+
+    let data = JSON.parse(localStorage.getItem("students")) || [];
+    data.push(student);
+    localStorage.setItem("students", JSON.stringify(data));
+
+    tablebody.innerHTML = "";
+    data.forEach((student, i) => addItem(student, i));
+
+    form.reset();
+});
+
+
+
+    window.onload = () => {
+    let data = JSON.parse(localStorage.getItem("students")) || [];
+    data.forEach((student, index) => addItem(student, index));
+};
+
+
+
+   function deleteItem(index) {
+    if (confirm("Delete the value")) {
+        let data = JSON.parse(localStorage.getItem("students"));
+        data.splice(index, 1);
+        localStorage.setItem("students", JSON.stringify(data));
+
+        tablebody.innerHTML = "";
+        data.forEach((student, i) => addItem(student, i));
+    }
+}
+
+
+
+       
+    </script>
+    
+
+
+</body>
+</html>
