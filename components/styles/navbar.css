@@ -1,0 +1,67 @@
+
+
+.navbar {
+  height: 60px;
+  background-color: #1e1e2f;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+
+.brand {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.nav-links li:hover {
+  color: #facc15;
+}
+
+.profile img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.profile img:hover {
+  transform: rotate(20deg) scale(1.1);
+}
+
+
+.container {
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.container.light {
+  background-color: #f4f6f8;
+  color: #1e1e2f;
+}
+
+.container.dark {
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+.back-btn.light{
+  background-color: #0f172a;
+  color: #f4f6f8;
+
+}
+
