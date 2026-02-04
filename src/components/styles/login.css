@@ -1,0 +1,79 @@
+/* Page wrapper */
+login-page {
+  height: 100vh;
+  width: 100%;
+
+}
+/* Background image with blur */
+.bg-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../image/WhatsApp\ Image\ 2025-11-02\ at\ 20.50.46_2131f11e.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: -1;
+}
+
+/* Login box */
+.login-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 320px;
+  padding: 30px;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+}
+
+
+/* Heading */
+.login-container h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.login-container input {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 25px;
+  border: 2px solid beige;
+  outline: none;
+  transition: 0.3s;
+}
+
+.login-container input:focus {
+  border-color: rgb(7, 92, 80);
+  background-color: #f0fefe;
+}
+
+/* Button */
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 25px;
+  border: none;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-container button:hover {
+  background-color: #1e1e2f;
+  transform: scale(1.05);
+}
