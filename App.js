@@ -1,57 +1,47 @@
-import React,{useState} from 'react'
-import './App.css';
+import { Routes, Route, Navigate } from "react-router-dom";
+import Login from './components/pages/login/index'
+import User from './components/pages/user/UserDashboard'
+import Admin from './components/pages/admin/index'
 
+import Navbar from "./components/Navbar";
+import BookHall from "./components/pages/user/HallCard";
+import MyBookings from "./components/pages/user/BookingForm";
 
 function App() {
-    const [show, setShow] = useState("");
+  const role = localStorage.getItem("role");
+  
+
   return (
-    <>
-     <div>
-        <h1>Calculator</h1>
-        <input type="text" value={show} readOnly />
-        <br />  <br></br>
-        <button onClick={() => setShow(show + "1")}>1</button>
-        <button onClick={() => setShow(show + "2")}>2</button>
-        <button onClick={() => setShow(show + "3")}>3</button>
-        <button onClick={() => setShow(show + "+")}>+</button>
-        <br />
-        <button onClick={() => setShow(show + "4")}>4</button>
-        <button onClick={() => setShow(show + "5")}>5</button>
-        <button onClick={() => setShow(show + "6")}>6</button>
-        <button onClick={() => setShow(show + "-")}>-</button>
-        <br />
-        <button onClick={() => setShow(show + "7")}>7</button>
-        <button onClick={() => setShow(show + "8")}>8</button>  
-        <button onClick={() => setShow(show + "9")}>9</button>
-        <button onClick={() => setShow(show + "*")}>*</button>
-        <br />
-        <button onClick={() => setShow("")}>C</button>
-        <button onClick={() => setShow(show + "0")}>0</button>
-
-        
-
-        <button onClick={() => setShow(show + "/")}>/</button>  
-
-        <button onClick={() => {
-            try {
-                setShow(eval(show).toString());
-                alert(`Result: ${eval(show  )}`);
-            } catch (error) {
-                setShow("text anything");
-            }
-        }}> = </button>
-
-        
-
-
-
-    </div>
+    <>  
     
-       
-    
+     <Routes>
+     
+      <Route path="/" element={<Login />} />
+
+      <Route
+        path="/user"
+        element={role === "USER" ? <User /> : <Navigate to="/" />}
+      />
+
+      <Route
+        path="/admin"
+        element={role === "ADMIN" ? <Admin /> : <Navigate to="/" />}
+      />
+
+      <Route path="/book" element={<BookHall/>}
+      />
+
+      <Route path="/my-booking" element={<MyBookings/>} />
+
+     
+      
+
+    </Routes>
+
     </>
    
-  )
+    
+  );
 }
 
-export default App
+export default App;
