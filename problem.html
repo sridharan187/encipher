@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Task 1
+        // let height = [0,1,0,2,1,0,1,3,2,1,2,1];
+        // let leftarr = 0
+        // let rightarr = height.length-1
+        // let leftMax = 0;
+        // let rightMax = 0;
+        // let totalwater = 0;
+
+        // while(leftarr<rightarr){
+
+        //     if(height[leftarr] < height[rightarr]){
+        //         if(height[leftarr] >= leftMax){
+        //             leftMax = height[leftarr];
+        //         }
+        //         else{
+        //             totalwater += leftMax - height[leftarr];
+        //         }
+        //         leftarr++;
+        //     }
+        //     else{
+        //         if(height[rightarr] >= rightMax){
+        //             rightMax = height[rightarr];
+
+        //         }else{
+        //             totalwater += rightMax - height[rightarr];
+        //         }
+        //         rightarr--;
+        //     }
+        // }
+        // console.log(totalwater);
+
+        //Task2
+//     let nums = [1,3,-1,-1,5,3,6,7];
+//     let k = 3;
+//     let store = [];
+//     for(i = 0; i <= nums.length - k; i++){
+//     let max = nums[i];
+//     for(let j = i + 1; j < i + k; j++){
+//         if(nums[j] > max){
+//             max = nums[j];
+//         }
+//     }
+//    store.push(max);
+// }
+// console.log(store);
+
+     //Task3
+//     let s = "abcabcbb";
+//     let max = 0;
+//     for(i = 0; i < s.length; i++){
+//     let str = "";
+//         for(j = i; j < s.length; j++){
+//             if(str.includes(s[j])){
+//                 break;
+//              }
+//             str += s[j];
+//      }
+//     if(str.length > max){
+//         max = str.length;
+//     }
+// }
+// console.log(max);
+
+// task4
+//     let s = "ADOBECODEBANC";
+//     let t = "ABC";
+//     let ans = "";
+//     for(i = 0; i < s.length; i++){
+
+//         for(j = i+1; j <= s.length; j++){
+//             let sub = s.substring(i,j);
+
+//             if(sub.includes("A") && sub.includes("B") && sub.includes("C")){
+//                     if(ans === "" || sub.length < ans.length){
+//                     ans = sub;
+//                 }
+//             }
+//      }
+// }
+// console.log(ans);
+
+//task5
+// let arr = [2,1,5,6,2,3];
+// let higharea = 0;
+
+// for(i = 0; i < arr.length; i++){
+//     let minHeight = arr[i];
+
+//     for(j = i; j < arr.length; j++){
+//         if(arr[j] < minHeight){
+//             minHeight = arr[j];
+//         }
+//         let width = j - i + 1;
+//         let area = minHeight * width;
+//         if(area > higharea){
+//             higharea = area;
+//         }
+//     }
+// }
+// console.log(higharea);
+
+//Task6
+// let arr = [3,4,-1,1];
+// let num = 1;
+// while(true){
+//     if(!arr.includes(num)){
+//         console.log(num);
+//         break;
+//     }
+//     num++;
+// }
+
+//task7
+// let arr = [1,2,3,4];
+// let result = [];
+
+// for(i = 0; i < arr.length; i++){
+//     let multiple = 1;
+
+//     for(j = 0; j < arr.length; j++){
+//         if(i !== j){
+//             multiple *= arr[j];
+//         }
+//     }
+//     result.push(multiple);
+// }
+// console.log(result);
+
+//task8
+// let s = "babad";
+// let longest = "";
+// for(let i = 0; i < s.length; i++){
+//     for(let j = i + 1; j <= s.length; j++){
+//         let sub = s.substring(i, j);
+
+//         let rev = sub.split("").reverse().join("");
+//         if(sub === rev && sub.length > longest.length){
+//             longest = sub;
+//         }
+//     }
+// }
+// console.log(longest);
+
+//Task9
+//     let arr = ["eat","tea","tan","ate","nat","bat"];
+//     let map = {};
+
+//     for(let word of arr){
+//         let key = word.split("").sort().join("");
+//         if(!map[key]){
+//         map[key] = [];
+//         }
+
+//         map[key].push(word);
+//   }
+
+// console.log(Object.values(map));
+
+//Task10
+// function sum(a){
+//     return function(b){
+//         return function(c){
+//             return a + b + c;
+//         }
+//     }
+// }
+// console.log(sum(1)(2)(3));
+        
+
+
+
+    </script>
+</body>
+</html>
