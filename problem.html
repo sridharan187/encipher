@@ -359,6 +359,61 @@
 // .catch(err => console.log(err));
 
 
+// Task23
+// async function run(tasks, limit){
+//     let i = 0;
+//     async function worker(){
+//         while(i < tasks.length){
+//             let cur = i++;
+//             await tasks[cur]();
+//         }
+//     }
+//     let arr = [];
+//     for(let j = 0; j < limit; j++){
+//         arr.push(worker());
+//     }
+//     await Promise.all(arr);
+// }
+// function createTask(name){
+//     return () => new Promise(res => {
+//         setTimeout(() => {
+//             console.log(name);
+//             res();
+//         }, 1000);
+//     });
+// }
+// let tasks = [
+//     createTask("API 1"),
+//     createTask("API 2"),
+//     createTask("API 3"),
+//     createTask("API 4")
+// ];
+// run(tasks, 2);
+
+
+// task 21
+// class Queue {
+//     constructor(){
+//         this.p = Promise.resolve();
+//     }
+//     add(task){
+//         this.p = this.p.then(() => task());
+//     }
+// }
+// let q = new Queue();
+// q.add(() => new Promise(res => {
+//     setTimeout(() => {
+//         console.log("Task 1");
+//         res();
+//     }, 1000);
+// }));
+// q.add(() => new Promise(res => {
+//     setTimeout(() => {
+//         console.log("Task 2");
+//         res();
+//     }, 1000);
+// }));
+
 
     </script>
 </body>
